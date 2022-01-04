@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "zeta",
+  "version": "${version}",
+  "name": "Zeta",
+  "description": "",
+  "authors": [
+    "Zoider"
+  ],
+  "contact": {
+    "homepage": "",
+    "issues": "",
+    "sources": ""
+  },
+  "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+  "icon": "assets/zeta/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.zoider.zeta.Zeta"
+      }
+    ]
+  },
+  "mixins": [
+    "zeta.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.7.1+kotlin.1.6.10",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
